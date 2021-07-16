@@ -1,0 +1,39 @@
+#vasava-edit {
+  .vsv-desktop {
+    display: inherit;
+  }
+
+  .vsv-mobile {
+    display: none;
+  }
+
+  .vsv-tablet {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    // Tablet
+    .vsv-desktop {
+      display: none;
+    }
+    .vsv-mobile {
+      display: none;
+    }
+    .vsv-tablet {
+      display: inherit;
+    }
+  }
+
+  @media screen and (min-width: 1px) and (max-width: 767px) {
+    // Mobile
+    .vsv-desktop {
+      display: none;
+    }
+    .vsv-tablet {
+      display: none;
+    }
+    .vsv-mobile {
+      display: inherit;
+    }
+  }
+}
